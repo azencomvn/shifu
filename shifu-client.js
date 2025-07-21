@@ -23,6 +23,7 @@ const wsCustomer = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(CUSTOMER
 
 
 //Lấy setting
+/*
 function getMasterSettingWithCache(rowNumber, columnLetter) {
   const cache = CacheService.getScriptCache();
   const cacheKey = `urlAPI_${rowNumber}_${columnLetter}`;
@@ -64,7 +65,7 @@ function getMasterSettingWithCache(rowNumber, columnLetter) {
 
   return value;
 }
-
+*/
 
 function phanTichSoDienThoai_LanLuot(sdt) {
   var s1 = tachHoaHung(sdt);
