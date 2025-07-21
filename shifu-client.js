@@ -768,6 +768,7 @@ function isSimChuanNL(){
   return false;
 
 }
+/*
 function onOpen() {
     //Welcome
   //const userEmail = Session.getActiveUser().getEmail();
@@ -787,6 +788,7 @@ function onOpen() {
   
   
 }
+*/
 function getUrlAPIFromProperties() {
   return PropertiesService.getScriptProperties().getProperty("urlAPI");
 }
