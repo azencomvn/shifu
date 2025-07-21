@@ -23,7 +23,7 @@ const wsCustomer = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(CUSTOMER
 
 
 //Lấy setting
-/*
+
 function getMasterSettingWithCache(rowNumber, columnLetter) {
   const cache = CacheService.getScriptCache();
   const cacheKey = `urlAPI_${rowNumber}_${columnLetter}`;
@@ -65,7 +65,7 @@ function getMasterSettingWithCache(rowNumber, columnLetter) {
 
   return value;
 }
-*/
+
 
 function phanTichSoDienThoai_LanLuot(sdt) {
   var s1 = tachHoaHung(sdt);
@@ -726,7 +726,7 @@ function onEditBienHoa(e) {
     }
   }
 }
-/*
+
 function TaoTriggerAll() {
 CacheService.getScriptCache().remove("urlAPI_1_B");
 const url = getMasterSettingWithCache(1, 'B');
@@ -761,7 +761,7 @@ const url = getMasterSettingWithCache(1, 'B');
   ui.alert("Đã tạo thành công Trigger chạy tự động luận sim");
 
 }
-*/
+
 function isSimChuanNL(){
   const HoaHungvoiKhong = wsMain.getRange(HOAHUNG_CELL).getValues();
   const BienHoa = wsMain.getRange(BIENHOA_CELL).getValue();
@@ -771,7 +771,7 @@ function isSimChuanNL(){
   return false;
 
 }
-/*
+
 function onOpen() {
     //Welcome
   //const userEmail = Session.getActiveUser().getEmail();
@@ -791,7 +791,7 @@ function onOpen() {
   
   
 }
-*/
+
 function getUrlAPIFromProperties() {
   return PropertiesService.getScriptProperties().getProperty("urlAPI");
 }
