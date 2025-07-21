@@ -725,6 +725,7 @@ function onEditBienHoa(e) {
     }
   }
 }
+/*
 function TaoTriggerAll() {
 CacheService.getScriptCache().remove("urlAPI_1_B");
 const url = getMasterSettingWithCache(1, 'B');
@@ -759,6 +760,7 @@ const url = getMasterSettingWithCache(1, 'B');
   ui.alert("Đã tạo thành công Trigger chạy tự động luận sim");
 
 }
+*/
 function isSimChuanNL(){
   const HoaHungvoiKhong = wsMain.getRange(HOAHUNG_CELL).getValues();
   const BienHoa = wsMain.getRange(BIENHOA_CELL).getValue();
